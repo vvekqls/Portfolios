@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { H1 } from "@/components/ui/H1";
 import { H2 } from "@/components/ui/H2";
+import { Button } from "@/components/ui/Button";
 import Image from "next/image";
 import me from "@/assets/DavidSong.png";
 import { Bot } from "lucide-react";
@@ -44,15 +45,16 @@ export default function Home() {
           The bot can provide links to pages you&apos;re looking for.
         </p>
       </section>
-      <Button
-        variant="outline"
-        size="md"
-        colorScheme="orange"
-        href="/Luke_CV.pdf"
-        download
-      >
-        Download Résumé
-      </Button>
+      <section className="space-y-3">
+        <Button
+          variant="outline"
+          size="md"
+          colorScheme="orange"
+          href="/David_Song.pdf"
+        >
+          Download Résumé
+        </Button>
+      </section>
     </section>
   );
 }
