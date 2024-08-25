@@ -31,7 +31,7 @@ export default function Home() {
             alt="David Song"
             height={300}
             width={300}
-            className="rounded-full aspect-square border-2 object-cover shadow-md dark:border-foreground"
+            className="aspect-square rounded-full border-2 object-cover shadow-md dark:border-foreground"
           />
         </div>
       </section>
@@ -41,9 +41,18 @@ export default function Home() {
           Click the <Bot className="inline pb-1" /> icon in the top bar to
           activate the AI chat. You can ask the chatbot any question about me
           and it will find the relevant information on this Portfolio website.
-          The bot can procide links to pages you&apos;re looking for.
+          The bot can provide links to pages you&apos;re looking for.
         </p>
       </section>
+      <Button
+        variant="outline"
+        size="md"
+        colorScheme="orange"
+        href="/Luke_CV.pdf"
+        download
+      >
+        Download Résumé
+      </Button>
     </section>
   );
 }

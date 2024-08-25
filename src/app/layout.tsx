@@ -1,4 +1,7 @@
 import type { Metadata } from "next";
+import { ThemeProvider } from "@/components/ThemeProvider";
+import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -20,7 +23,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <main className="py-10 max-w-3xl mx-auto px-3">{children}</main>
+        <ThemeProvider attribute="class">
+          <Navbar />
+          <main className="mx-auto max-w-3xl px-3 py-10">{children}</main>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
