@@ -26,7 +26,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class">
           <Navbar />
           <main className="mx-auto max-w-5xl px-3 py-10">{children}</main>
-          <Footer />
+          {/* <Footer /> */}
         </ThemeProvider>
       </body>
     </html>
