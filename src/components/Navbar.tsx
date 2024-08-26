@@ -5,7 +5,7 @@ import ThemeToggle from "./ThemeToggle";
 
 export const Navbar = () => {
   return (
-    <header className="sticky top-0 bg-background">
+    <header className="sticky top-0 z-50 bg-background">
       <div className="max-w3xl mx-auto flex flex-wrap justify-between gap-3 px-3 py-4">
         <nav className="flex space-x-4 font-medium">
           <Link href="/">
